@@ -1,0 +1,81 @@
+<!-- 
+
+@Author        : jenifer
+@Description   : common layout
+@Created       :  29 nov 2019
+
+ -->
+
+<!-- navbar starts here -->
+<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+    <a class="navbar-brand mr-1" href="#">infiniti news blog</a>
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+
+<!-- search -->
+  <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+     <!-- Navbar -->
+    <ul class="navbar-nav ml-auto ml-md-0">
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link" href="javascript:;"[routerLink]="'/news'">
+          <i class="fa fa-book" aria-hidden="true"></i>
+        news
+        </a>
+      </li>
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link" href="javascript:;"[routerLink]="'/sports'">
+          <i class="fa fa-bicycle" aria-hidden="true"></i>
+        sports
+        </a>
+      </li>
+
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link" href="javascript:;"[routerLink]="'/entertainment'">
+         <i class="fas fa-tv"></i>
+          entertainment
+        </a>
+      </li>
+      <li class="nav-item dropdown no-arrow">
+         <a class="nav-link" href="javascript:;"[routerLink]="'/technical'">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          technical
+        </a>
+      </li>
+      <!-- dropdown -->
+      <li class="nav-item dropdown arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-globe" aria-hidden="true"></i>countries
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+          <a class="dropdown-item" href="javascript:;"[routerLink]="'/asia'">Asia</a>
+          <a class="dropdown-item" href="javascript:;"[routerLink]="'/us'">US</a>
+          <a class="dropdown-item" href="javascript:;"[routerLink]="'/australia'">Australia</a>
+          <a class="dropdown-item" href="javascript:;"[routerLink]="'/uk'">UK</a>
+          <a class="dropdown-item" href="javascript:;"[routerLink]="'/UAE'">UAE</a>
+          <!-- <div class="dropdown-divider"></div> -->
+        </div>
+      </li>
+      <!-- dropdown ends -->
+    </ul>
+  </nav>
+  <!-- navbar ends here -->
+<div class="row">
+  <div class="col-md-10">
+    <!-- content goes here -->
+    <router-outlet></router-outlet>
+    <!-- content ends here -->
+  </div>
+  <div class="col-md-2">
+    
+  </div>
+</div>
