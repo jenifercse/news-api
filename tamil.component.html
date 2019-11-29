@@ -1,0 +1,32 @@
+<div class="news-div row">
+	<div *ngFor="let article of articles">
+		<div class="row news-content">
+
+	  		<div class="col-md-4">
+	  			<img src="{{article.urlToImage}}" class="img">
+	  		</div>
+	  		<div class="col-md-8">
+	  			<div class="row">
+	  				<h2 class="card-header">{{article.title}}</h2>
+	  			</div>
+	  			<div class="row">
+	  				<p class="card-body">
+			      	{{article.description}}
+			    	</p>
+	  			</div>
+	  			<div class="row">
+	  				<a href="{{article.url}}" class="card-footer btn btn-info read-article">Read full article</a>
+	  			</div>
+	  		</div>
+
+	    </div>
+	</div>
+</div>
+
+
+	    	
+	    	
+
+		    
+		   
+		   
